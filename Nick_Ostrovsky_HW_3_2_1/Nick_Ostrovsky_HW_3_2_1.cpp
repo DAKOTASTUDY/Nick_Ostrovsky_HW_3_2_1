@@ -27,13 +27,13 @@ int main()
         
         std::cout << "\n Please, enter month number [1-12]: \t\n";
         std::cin >> userchoice;
-            m = static_cast<month>(userchoice);
+        m = static_cast<month>(userchoice);
         if (userchoice == 0)
         {
             std::cout << "Zero is a bad choice" << std::endl;
             return (-1);
         }
-    if ((userchoice < 0) || (userchoice > 12))
+        else if ((userchoice < 0) || (userchoice > 12))
     {
         std::cout << "\n\t Are you kidding me?" << std::endl;
        
